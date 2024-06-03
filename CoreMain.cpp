@@ -248,11 +248,11 @@ int main(int argc, char *argv[])
 
     if (total_errors == 0)
     {
-        printf("Correct operation validated. See README.md for run and reporting rules.\n");
+        printf("Correct operation validated.\n");
 
         if (known_id == 3)
         {
-            printf("CoreMark 1.0 : %f\n", core_count * results[0].iterations / time_in_secs(total_time));
+            printf("CoreMarkCpp : %f\n", core_count * results[0].iterations / time_in_secs(total_time));
         }
     }
 
